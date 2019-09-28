@@ -49,7 +49,7 @@ module.exports.calculateScore = function (player) {
       return calculateReceivingScore(player)
     default:
 
-      throw ('Unknown player position (K)')
+      throw new Error(`Unknown player position (${player.position})`)
 
   }
 }
